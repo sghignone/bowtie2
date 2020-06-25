@@ -16,3 +16,4 @@ RUN	conda config --add channels conda-forge && \
 RUN	conda install bowtie2=2.4.1 && conda clean -a
 
 WORKDIR	/scratch
+CMD	["bowtie2","bowtie2-build"]
